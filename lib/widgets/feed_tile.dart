@@ -26,7 +26,7 @@ class FeedTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         child: Column(
           children: [
-            Image.network(item.imageUrl),
+            item.image,
             Container(
               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
               decoration: BoxDecoration(color: white),
@@ -68,7 +68,7 @@ class FeedTile extends StatelessWidget {
                     ),
                   ),
                   CircleAvatar(
-                    backgroundImage: NetworkImage(item.imageUrl),
+                    backgroundImage: item.image.image,
                     radius: 12,
                   )
                 ],

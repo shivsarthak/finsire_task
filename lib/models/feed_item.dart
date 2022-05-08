@@ -1,10 +1,12 @@
+import 'package:flutter/material.dart';
+
 class FeedItem {
   final String name;
-  final String imageUrl;
+  final Image image;
   final String caption;
   FeedItem({
     required this.name,
-    required this.imageUrl,
+    required this.image,
     required this.caption,
   });
 }
